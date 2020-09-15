@@ -1,0 +1,7 @@
+test1/bin filter=lfs diff=lfs merge=lfs -text
+test1/include filter=lfs diff=lfs merge=lfs -text
+test1/lib filter=lfs diff=lfs merge=lfs -text
+test1/lib64 filter=lfs diff=lfs merge=lfs -text
+test1/pyvenv.cfg filter=lfs diff=lfs merge=lfs -text
+test1/share filter=lfs diff=lfs merge=lfs -text
+test1/ filter=lfs diff=lfs merge=lfs -text

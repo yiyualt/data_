@@ -2,6 +2,7 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.cluster import affinity_propagation
 import logging
 from numba import jit
 
@@ -22,6 +23,7 @@ print(X.shape)
 logging.info("start computing similarity...")
 S = compute_normalize_similarity(X)
 S = S.astype(np.float32)
-print(S[0])
-print()
-print(X[0])
+del X
+logging.info("start ap clustering...")
+event_centers,labels = affinity_propagation(S)
+print(len(labels))
