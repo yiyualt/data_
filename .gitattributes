@@ -6,3 +6,4 @@ test1/pyvenv.cfg filter=lfs diff=lfs merge=lfs -text
 test1/share filter=lfs diff=lfs merge=lfs -text
 test1/ filter=lfs diff=lfs merge=lfs -text
 test1.zip filter=lfs diff=lfs merge=lfs -text
+sbert.net_models_distilbert-base-nli-stsb-mean-tokens.zip filter=lfs diff=lfs merge=lfs -text
